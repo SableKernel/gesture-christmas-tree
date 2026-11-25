@@ -18,33 +18,33 @@
   #titleWrap h1 {
     font-family: 'Marcellus', 'Times New Roman', serif;
     font-size: clamp(24px, 3.6vw, 46px); font-weight: 400;
-    color: #f2ead6; letter-spacing: .42em; text-indent: .42em; line-height: 1.1;
-    text-shadow: 0 0 14px rgba(255, 226, 150, 0.28), 0 0 40px rgba(255, 226, 150, 0.15);
+    color: #eafaff; letter-spacing: .42em; text-indent: .42em; line-height: 1.1;
+    text-shadow: 0 0 14px rgba(140, 235, 255, 0.28), 0 0 40px rgba(140, 235, 255, 0.15);
   }
   #titleWrap .to {
     font-family: 'Cormorant Garamond', serif; font-size: clamp(11px, 1.2vw, 14px);
-    color: #d9b96a; letter-spacing: .3em; text-indent: .3em; margin-top: 9px; opacity: .9;
-    text-shadow: 0 0 10px rgba(217, 185, 106, 0.35);
+    color: #8fd8e8; letter-spacing: .3em; text-indent: .3em; margin-top: 9px; opacity: .9;
+    text-shadow: 0 0 10px rgba(130, 210, 255, 0.35);
   }
 
   /* 照片墙（深色玻璃 + 金色描边，小窗） */
   #photoPanel {
     position: fixed; top: 22px; right: 18px; z-index: 8; width: 196px;
-    background: rgba(10, 8, 4, 0.66); border: 1px solid rgba(217, 185, 106, 0.3);
+    background: rgba(6, 10, 24, 0.66); border: 1px solid rgba(130, 210, 255, 0.3);
     border-radius: 12px; padding: 9px 10px 10px; backdrop-filter: blur(8px);
     box-shadow: 0 4px 22px rgba(0,0,0,.5); transition: box-shadow .25s;
   }
-  #photoPanel.dragover { box-shadow: 0 0 0 2px rgba(233, 200, 120, .85), 0 0 26px rgba(233,200,120,.4); }
+  #photoPanel.dragover { box-shadow: 0 0 0 2px rgba(120, 230, 255, .85), 0 0 26px rgba(120,230,255,.4); }
   #photoPanel h3 {
-    font-family: 'Cormorant Garamond', serif; font-size: 12px; font-weight: 500; color: #e6d5a3;
+    font-family: 'Cormorant Garamond', serif; font-size: 12px; font-weight: 500; color: #d8f2ff;
     letter-spacing: 1.5px; margin-bottom: 7px; display: flex; align-items: center; gap: 6px;
   }
-  #photoPanel h3 .dot { width: 5px; height: 5px; border-radius: 50%; background: #e9c878;
-    box-shadow: 0 0 8px #e9c878; flex: none; }
+  #photoPanel h3 .dot { width: 5px; height: 5px; border-radius: 50%; background: #7ff0ff;
+    box-shadow: 0 0 8px #7ff0ff; flex: none; }
   #thumbs { display: flex; flex-wrap: wrap; gap: 5px; }
   #thumbs .thumb {
     position: relative; width: 40px; height: 52px; border-radius: 5px; overflow: hidden;
-    border: 1px solid rgba(233, 200, 120, 0.4); cursor: pointer; flex: none;
+    border: 1px solid rgba(120, 230, 255, 0.4); cursor: pointer; flex: none;
   }
   #thumbs .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
   #thumbs .thumb .rm {
@@ -53,47 +53,47 @@
     border-radius: 0 4px 0 6px; cursor: pointer; display: none;
   }
   #thumbs .thumb:hover .rm { display: block; }
-  #thumbs .thumb.sel { border-color: #f0d78c; box-shadow: 0 0 10px rgba(240, 215, 140, .8); }
+  #thumbs .thumb.sel { border-color: #7ff0ff; box-shadow: 0 0 10px rgba(150, 240, 255, .8); }
   #dropTip {
-    margin-top: 7px; border: 1px dashed rgba(217, 185, 106, 0.4); border-radius: 7px;
-    color: #cbb57e; font-size: 10px; text-align: center; padding: 7px 3px; letter-spacing: 1px;
+    margin-top: 7px; border: 1px dashed rgba(130, 210, 255, 0.4); border-radius: 7px;
+    color: #7fb8cc; font-size: 10px; text-align: center; padding: 7px 3px; letter-spacing: 1px;
     opacity: .85; pointer-events: none;
   }
 
   /* 小按钮（深色 + 金色微光） */
   #toolbar { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); z-index: 7; display: flex; gap: 7px; }
   #toolbar button {
-    font-size: 11.5px; letter-spacing: 1px; color: #ecdcad; cursor: pointer;
-    background: rgba(12, 10, 6, 0.62); border: 1px solid rgba(217, 185, 106, 0.32);
+    font-size: 11.5px; letter-spacing: 1px; color: #d8f2ff; cursor: pointer;
+    background: rgba(8, 14, 30, 0.62); border: 1px solid rgba(130, 210, 255, 0.32);
     border-radius: 999px; padding: 5px 12px; backdrop-filter: blur(6px);
     transition: transform .15s, box-shadow .15s, border-color .15s;
   }
-  #toolbar button:hover { transform: translateY(-2px); border-color: rgba(233,200,120,.8); box-shadow: 0 0 14px rgba(233, 200, 120, 0.35); }
-  #toolbar button.on { background: rgba(120, 90, 30, 0.45); border-color: rgba(240, 215, 140, .85); }
+  #toolbar button:hover { transform: translateY(-2px); border-color: rgba(120,230,255,.8); box-shadow: 0 0 14px rgba(120, 230, 255, 0.35); }
+  #toolbar button.on { background: rgba(120, 90, 30, 0.45); border-color: rgba(150, 240, 255, .85); }
 
   #hint {
     position: fixed; bottom: 50px; left: 50%; transform: translateX(-50%); z-index: 6;
-    color: #b9a575; font-size: 10.5px; letter-spacing: 1px; opacity: .6; user-select: none;
+    color: #7fb8cc; font-size: 10.5px; letter-spacing: 1px; opacity: .6; user-select: none;
     text-align: center; pointer-events: none; white-space: nowrap;
   }
 
   #cam {
     position: fixed; right: 18px; bottom: 18px; z-index: 6;
     width: 138px; height: auto; border-radius: 10px;
-    border: 1px solid rgba(217, 185, 106, 0.5);
-    box-shadow: 0 0 16px rgba(233, 200, 120, 0.25);
+    border: 1px solid rgba(130, 210, 255, 0.5);
+    box-shadow: 0 0 16px rgba(120, 230, 255, 0.25);
     transform: scaleX(-1); display: none; background: #000; opacity: .9;
   }
   #gestureStatus {
     position: fixed; right: 18px; bottom: 130px; z-index: 6; width: 138px;
-    text-align: center; color: #e6d5a3; font-size: 10.5px; letter-spacing: .5px;
-    display: none; background: rgba(10,8,4,.62); border-radius: 9px; padding: 5px 3px; line-height: 1.6;
+    text-align: center; color: #d8f2ff; font-size: 10.5px; letter-spacing: .5px;
+    display: none; background: rgba(6,10,24,.62); border-radius: 9px; padding: 5px 3px; line-height: 1.6;
   }
   #err {
     position: fixed; top: 46%; left: 50%; transform: translate(-50%,-50%); z-index: 9;
-    color: #e6d5a3; font-size: 13px; line-height: 1.9; text-align: center; display: none;
-    background: rgba(10,8,4,.9); padding: 14px 26px; border-radius: 12px;
-    border: 1px solid rgba(217,185,106,.4); max-width: 460px;
+    color: #d8f2ff; font-size: 13px; line-height: 1.9; text-align: center; display: none;
+    background: rgba(6,10,24,.9); padding: 14px 26px; border-radius: 12px;
+    border: 1px solid rgba(130,210,255,.4); max-width: 460px;
   }
 </style>
 </head>
@@ -131,8 +131,8 @@ const ctx = canvas.getContext('2d');
 let W = 0, H = 0, DPR = Math.min(window.devicePixelRatio || 1, 2);
 
 // 视频同款配色：金色为主 + 红绿蓝彩灯点缀，纯黑背景
-const GOLD_COLS = ['#ffe9a8', '#f0d78c', '#e9c878', '#fff3d0', '#f7c96b'];
-const ORN_COLS  = ['#ff5f5f', '#5adf7f', '#6db4ff', '#ffffff'];
+const GOLD_COLS = ['#ffffff', '#aef6ff', '#7ff0ff', '#5adcff', '#b9f0ff'];
+const ORN_COLS  = ['#5adcff', '#2ee6c8', '#9b8cff', '#ffffff'];
 
 // ---------- 发光精灵 ----------
 function makeDot(color, core) {
@@ -146,7 +146,7 @@ function makeDot(color, core) {
 }
 const dotSprites = {};
 for (const c of [...GOLD_COLS, ...ORN_COLS]) dotSprites[c] = makeDot(c);
-const markerDot = makeDot('#e9c878', '#fff');
+const markerDot = makeDot('#7ff0ff', '#fff');
 
 // ---------- 圣诞专属装饰：平安果 / 圣诞袜 / 礼物盒 / 拐杖糖 / 铃铛 / 蝴蝶结 / 金星 ----------
 function makeOrnament(kind) {
@@ -164,19 +164,19 @@ function makeOrnament(kind) {
   };
   switch (kind) {
     case 'apple': // 平安果
-      c.fillStyle = '#e0392f';
+      c.fillStyle = '#2ee6c8';
       c.beginPath(); c.arc(0, 5, 21, 0, Math.PI * 2); c.fill();
-      c.fillStyle = '#b52a24';
+      c.fillStyle = '#1f9fc8';
       c.beginPath(); c.arc(4, 10, 15, 0, Math.PI * 2); c.fill();
       c.fillStyle = 'rgba(255,255,255,.4)';
       c.beginPath(); c.ellipse(-8, -3, 6, 9, -0.5, 0, Math.PI * 2); c.fill();
-      c.strokeStyle = '#8a5a2a'; c.lineWidth = 3;
+      c.strokeStyle = '#5a7aa8'; c.lineWidth = 3;
       c.beginPath(); c.moveTo(0, -14); c.quadraticCurveTo(3, -22, 7, -26); c.stroke();
-      c.fillStyle = '#4faf5a';
+      c.fillStyle = '#5adcff';
       c.beginPath(); c.ellipse(10, -19, 9, 4.5, -0.35, 0, Math.PI * 2); c.fill();
       break;
     case 'sock': // 圣诞袜
-      c.fillStyle = '#d63031';
+      c.fillStyle = '#2f9fd8';
       c.beginPath();
       c.moveTo(-13, -24); c.lineTo(13, -24); c.lineTo(13, 0);
       c.quadraticCurveTo(27, 2, 27, 12); c.quadraticCurveTo(27, 22, 15, 22);
@@ -184,49 +184,49 @@ function makeOrnament(kind) {
       c.fillStyle = '#fff7ec';
       c.beginPath(); c.moveTo(-15, -28); c.lineTo(15, -28); c.lineTo(15, -18); c.lineTo(-15, -18); c.closePath(); c.fill();
       c.beginPath(); c.arc(15, 14, 7, 0, Math.PI * 2); c.fill();
-      star(-2, 2, 8, 0.3, '#ffe9a8');
+      star(-2, 2, 8, 0.3, '#aef6ff');
       break;
     case 'gift': // 礼物盒
-      c.fillStyle = '#c0392b'; rr(-20, -8, 40, 30, 4); c.fill();
-      c.fillStyle = '#a52c22'; rr(-23, -16, 46, 10, 3); c.fill();
-      c.fillStyle = '#f0d78c';
+      c.fillStyle = '#7f6cd9'; rr(-20, -8, 40, 30, 4); c.fill();
+      c.fillStyle = '#6354b8'; rr(-23, -16, 46, 10, 3); c.fill();
+      c.fillStyle = '#7ff0ff';
       c.fillRect(-4, -16, 8, 38);
       c.beginPath(); c.ellipse(-11, -18, 10, 6, -0.5, 0, Math.PI * 2); c.fill();
       c.beginPath(); c.ellipse(11, -18, 10, 6, 0.5, 0, Math.PI * 2); c.fill();
-      c.fillStyle = '#e9c878';
+      c.fillStyle = '#7ff0ff';
       c.beginPath(); c.arc(0, -17, 4, 0, Math.PI * 2); c.fill();
       break;
     case 'cane': // 拐杖糖
       c.strokeStyle = '#fff7ec'; c.lineWidth = 10;
       c.beginPath(); c.moveTo(-3, 26); c.lineTo(-3, -4); c.arc(5, -4, 8, Math.PI, 0, false); c.stroke();
-      c.strokeStyle = '#e0392f'; c.lineWidth = 10; c.setLineDash([5, 7]);
+      c.strokeStyle = '#2ee6c8'; c.lineWidth = 10; c.setLineDash([5, 7]);
       c.beginPath(); c.moveTo(-3, 26); c.lineTo(-3, -4); c.arc(5, -4, 8, Math.PI, 0, false); c.stroke();
       c.setLineDash([]);
       break;
     case 'bell': // 铃铛
-      c.fillStyle = '#f0d78c';
+      c.fillStyle = '#7ff0ff';
       c.beginPath(); c.moveTo(-14, 14); c.quadraticCurveTo(-16, -14, 0, -16);
       c.quadraticCurveTo(16, -14, 14, 14); c.closePath(); c.fill();
-      c.fillStyle = '#c9a44b';
+      c.fillStyle = '#8fc4e0';
       c.beginPath(); c.ellipse(0, 14, 16, 4, 0, 0, Math.PI * 2); c.fill();
-      c.fillStyle = '#fff3d0';
+      c.fillStyle = '#eaffff';
       c.beginPath(); c.arc(0, -17, 4.5, 0, Math.PI * 2); c.fill();
-      c.fillStyle = '#e0392f';
+      c.fillStyle = '#2ee6c8';
       c.beginPath(); c.arc(9, -6, 3, 0, Math.PI * 2); c.fill();
       break;
     case 'bow': // 蝴蝶结
-      c.fillStyle = '#e0392f';
+      c.fillStyle = '#2ee6c8';
       c.beginPath(); c.moveTo(0, 0); c.quadraticCurveTo(-26, -14, -20, 2); c.quadraticCurveTo(-16, 12, 0, 6); c.closePath(); c.fill();
       c.beginPath(); c.moveTo(0, 0); c.quadraticCurveTo(26, -14, 20, 2); c.quadraticCurveTo(16, 12, 0, 6); c.closePath(); c.fill();
-      c.fillStyle = '#f0d78c';
+      c.fillStyle = '#7ff0ff';
       c.beginPath(); c.ellipse(0, 2, 7, 5, 0, 0, Math.PI * 2); c.fill();
-      c.strokeStyle = '#e0392f'; c.lineWidth = 4;
+      c.strokeStyle = '#2ee6c8'; c.lineWidth = 4;
       c.beginPath(); c.moveTo(-4, 6); c.quadraticCurveTo(-8, 18, -12, 24); c.stroke();
       c.beginPath(); c.moveTo(4, 6); c.quadraticCurveTo(8, 18, 12, 24); c.stroke();
       break;
     case 'star': // 金星
-      star(0, 0, 21, 0, '#f0d78c');
-      star(0, 0, 10, Math.PI / 5, '#fff6d8');
+      star(0, 0, 21, 0, '#7ff0ff');
+      star(0, 0, 10, Math.PI / 5, '#eaffff');
       break;
   }
   return s;
@@ -295,7 +295,7 @@ function buildScene() {
   bgStars = [];
   for (let i = 0; i < Math.round(W * H / 16000); i++) {
     bgStars.push({ x: rand(0, W), y: rand(0, H), size: rand(0.5, 1.6),
-      color: pick(['#f0e6c8', '#d9c79a', '#ffffff']), phase: rand(0, 6.28), twSpeed: rand(0.3, 1.4) });
+      color: pick(['#d8f4ff', '#9fd8f0', '#ffffff']), phase: rand(0, 6.28), twSpeed: rand(0.3, 1.4) });
   }
   snows = [];
   for (let i = 0; i < 55; i++) {
@@ -395,7 +395,9 @@ function frame(now) {
 
   // 背景：纯黑 + 微弱星点
   ctx.globalCompositeOperation = 'source-over';
-  ctx.fillStyle = '#050403'; ctx.fillRect(0, 0, W, H);
+  const bgGrad = ctx.createLinearGradient(0, 0, 0, H);
+  bgGrad.addColorStop(0, '#070d26'); bgGrad.addColorStop(0.55, '#121038'); bgGrad.addColorStop(1, '#221358');
+  ctx.fillStyle = bgGrad; ctx.fillRect(0, 0, W, H);
   for (const b of bgStars) {
     ctx.globalAlpha = 0.18 + 0.4 * (0.5 + 0.5 * Math.sin(t * b.twSpeed + b.phase));
     ctx.fillStyle = b.color;
@@ -405,17 +407,17 @@ function frame(now) {
 
   // 树后金色氛围光
   const halo = ctx.createRadialGradient(tree.cx, cY, 10, tree.cx, cY, tree.Rmax * 2.1);
-  halo.addColorStop(0, 'rgba(233, 200, 120, 0.10)'); halo.addColorStop(0.5, 'rgba(233, 200, 120, 0.045)'); halo.addColorStop(1, 'rgba(0,0,0,0)');
+  halo.addColorStop(0, 'rgba(120, 230, 255, 0.10)'); halo.addColorStop(0.5, 'rgba(120, 230, 255, 0.045)'); halo.addColorStop(1, 'rgba(0,0,0,0)');
   ctx.fillStyle = halo; ctx.fillRect(0, 0, W, H);
 
   // 地面光 + 光环
   const gy = tree.groundY + 6;
   const gGlow = ctx.createRadialGradient(tree.cx, gy, 5, tree.cx, gy, tree.Rmax * 1.5);
-  gGlow.addColorStop(0, 'rgba(233, 200, 120, 0.16)'); gGlow.addColorStop(1, 'rgba(0,0,0,0)');
+  gGlow.addColorStop(0, 'rgba(120, 230, 255, 0.16)'); gGlow.addColorStop(1, 'rgba(0,0,0,0)');
   ctx.fillStyle = gGlow; ctx.fillRect(0, 0, W, H);
   ctx.save(); ctx.translate(tree.cx, gy); ctx.scale(1, 0.24);
   for (let i = 0; i < 2; i++) {
-    ctx.strokeStyle = `rgba(233,200,120,${0.16 - i * 0.06})`; ctx.lineWidth = 1.5;
+    ctx.strokeStyle = `rgba(120,230,255,${0.16 - i * 0.06})`; ctx.lineWidth = 1.5;
     ctx.beginPath(); ctx.arc(0, 0, tree.Rmax * (1.1 + i * 0.65), 0, Math.PI * 2); ctx.stroke();
   }
   ctx.restore();
@@ -507,9 +509,9 @@ function frame(now) {
     ctx.save();
     ctx.translate(q.sx, q.sy); ctx.rotate(tilt);
     ctx.globalAlpha = Math.min(1, (0.45 + 0.55 * depth) * p.appear);
-    ctx.shadowColor = hl ? 'rgba(240, 215, 140, 0.95)' : 'rgba(233, 200, 120, 0.45)';
+    ctx.shadowColor = hl ? 'rgba(150, 240, 255, 0.95)' : 'rgba(120, 230, 255, 0.45)';
     ctx.shadowBlur = hl ? 15 : 6;
-    ctx.fillStyle = 'rgba(245, 236, 214, 0.96)';
+    ctx.fillStyle = 'rgba(230, 248, 255, 0.96)';
     rrect(ctx, -w / 2 - 2.5, -h / 2 - 2.5, w + 5, h + 5, 5); ctx.fill();
     ctx.shadowBlur = 0;
     ctx.save();
@@ -517,7 +519,7 @@ function frame(now) {
     ctx.drawImage(img, -w / 2, -h / 2, w, h);
     ctx.restore();
     if (hl) {
-      ctx.strokeStyle = 'rgba(240, 215, 140, 0.9)'; ctx.lineWidth = 1.6;
+      ctx.strokeStyle = 'rgba(150, 240, 255, 0.9)'; ctx.lineWidth = 1.6;
       ctx.setLineDash([4, 3]); ctx.lineDashOffset = -t * 22;
       ctx.beginPath(); rrect(ctx, -w / 2 - 6, -h / 2 - 6, w + 12, h + 12, 8); ctx.stroke();
       ctx.setLineDash([]);
@@ -537,11 +539,11 @@ function frame(now) {
     const ih = maxH * e, iw = ih * (img.width / img.height);
     const cxp = W / 2, cyp = H * 0.46 + Math.sin(t * 1.1) * 5;
     const gl = ctx.createRadialGradient(cxp, cyp, ih * 0.2, cxp, cyp, ih * 0.8);
-    gl.addColorStop(0, 'rgba(233,200,120,0.30)'); gl.addColorStop(1, 'rgba(233,200,120,0)');
+    gl.addColorStop(0, 'rgba(120,230,255,0.30)'); gl.addColorStop(1, 'rgba(120,230,255,0)');
     ctx.fillStyle = gl; ctx.fillRect(0, 0, W, H);
     ctx.save();
-    ctx.shadowColor = 'rgba(240, 215, 140, 0.85)'; ctx.shadowBlur = 34;
-    ctx.fillStyle = '#f2ead0';
+    ctx.shadowColor = 'rgba(150, 240, 255, 0.85)'; ctx.shadowBlur = 34;
+    ctx.fillStyle = '#eaffff';
     rrect(ctx, cxp - iw / 2 - 5, cyp - ih / 2 - 5, iw + 10, ih + 10, 12); ctx.fill();
     ctx.restore();
     ctx.save();
@@ -551,7 +553,7 @@ function frame(now) {
     for (let i = 0; i < 9; i++) {           // 环绕金星
       const a = t * 0.6 + i * Math.PI / 4.5;
       drawStarShape(cxp + Math.cos(a) * iw * 0.68, cyp + Math.sin(a) * ih * 0.55,
-        4.5 + Math.sin(t * 3 + i) * 2, a, '#f0d78c', 0.85);
+        4.5 + Math.sin(t * 3 + i) * 2, a, '#7ff0ff', 0.85);
     }
   }
 
@@ -561,7 +563,7 @@ function frame(now) {
     f.y += f.vy * dt;
     if (f.y > H + 6) { f.y = -6; f.x = rand(0, W); }
     ctx.globalAlpha = 0.3;
-    ctx.fillStyle = '#f0e6c8';
+    ctx.fillStyle = '#d8f4ff';
     ctx.beginPath(); ctx.arc(f.x + Math.sin(t * f.swayS + f.phase) * f.swayA, f.y, f.size, 0, Math.PI * 2); ctx.fill();
   }
   ctx.globalCompositeOperation = 'source-over';
@@ -587,11 +589,11 @@ function drawTopper(t, bob) {
   ctx.save();
   ctx.globalCompositeOperation = 'lighter';
   const gl = ctx.createRadialGradient(x, y, 1, x, y, 46);
-  gl.addColorStop(0, 'rgba(255, 240, 200, 0.55)'); gl.addColorStop(0.35, 'rgba(240, 215, 140, 0.25)'); gl.addColorStop(1, 'rgba(0,0,0,0)');
+  gl.addColorStop(0, 'rgba(180, 240, 255, 0.55)'); gl.addColorStop(0.35, 'rgba(150, 240, 255, 0.25)'); gl.addColorStop(1, 'rgba(0,0,0,0)');
   ctx.fillStyle = gl; ctx.beginPath(); ctx.arc(x, y, 46, 0, Math.PI * 2); ctx.fill();
   // 四芒星光（菱形双层）
-  ctx.fillStyle = '#fff6d8';
-  ctx.shadowColor = '#f0d78c'; ctx.shadowBlur = 18;
+  ctx.fillStyle = '#eaffff';
+  ctx.shadowColor = '#7ff0ff'; ctx.shadowBlur = 18;
   for (const rot of [0, Math.PI / 2]) {
     ctx.beginPath();
     ctx.moveTo(x + Math.cos(rot) * r, y + Math.sin(rot) * r);
@@ -601,7 +603,7 @@ function drawTopper(t, bob) {
     ctx.closePath(); ctx.fill();
   }
   // 长光芒线
-  ctx.strokeStyle = 'rgba(255, 244, 210, 0.8)'; ctx.lineWidth = 1.3; ctx.lineCap = 'round';
+  ctx.strokeStyle = 'rgba(200, 246, 255, 0.8)'; ctx.lineWidth = 1.3; ctx.lineCap = 'round';
   for (let i = 0; i < 4; i++) {
     const a = t * 0.4 + i * Math.PI / 2;
     const len = r * (2.1 + 0.55 * Math.sin(t * 3 + i));
@@ -616,7 +618,7 @@ function drawTrunk(t) {
   const w = Math.max(22, Rmax * 0.26), h = Math.max(treeH * 0.09, 30);
   const top = groundY - 3, bot = groundY + h;
   const tg = ctx.createLinearGradient(cx - w / 2, 0, cx + w / 2, 0);
-  tg.addColorStop(0, '#3a2410'); tg.addColorStop(0.35, '#7a5a28'); tg.addColorStop(0.6, '#5f4520'); tg.addColorStop(1, '#33200e');
+  tg.addColorStop(0, '#101c38'); tg.addColorStop(0.35, '#2c4a7a'); tg.addColorStop(0.6, '#1d3a66'); tg.addColorStop(1, '#0e1830');
   ctx.fillStyle = tg;
   ctx.beginPath();
   ctx.moveTo(cx - w * 0.4, top); ctx.quadraticCurveTo(cx - w / 2, (top + bot) / 2, cx - w * 0.44, bot - 5);
@@ -625,7 +627,7 @@ function drawTrunk(t) {
   ctx.closePath(); ctx.fill();
   ctx.save();
   ctx.beginPath(); ctx.rect(cx - w / 2, top, w, h); ctx.clip();
-  ctx.strokeStyle = 'rgba(240, 215, 140, 0.5)'; ctx.lineWidth = Math.max(2, w * 0.075);
+  ctx.strokeStyle = 'rgba(150, 240, 255, 0.5)'; ctx.lineWidth = Math.max(2, w * 0.075);
   for (let y = top - w; y < bot + w; y += w * 0.5) {
     ctx.beginPath(); ctx.moveTo(cx - w, y); ctx.lineTo(cx + w, y + w * 0.7); ctx.stroke();
   }
@@ -675,7 +677,7 @@ window.addEventListener('drop', e => {
 
 // 示例照片（金色调卡片，先试效果用）
 function addDemoPhotos() {
-  const themes = [['#f7c96b', '#5a3a10'], ['#e05555', '#401010'], ['#4d8f6a', '#10301c']];
+  const themes = [['#5adcff', '#0c2438'], ['#9b8cff', '#241a4a'], ['#2ee6c8', '#0a3028']];
   themes.forEach((c, i) => {
     const cv = document.createElement('canvas'); cv.width = 150; cv.height = 200;
     const c2 = cv.getContext('2d');
@@ -819,5 +821,7 @@ async function detectLoop() {
   setTimeout(detectLoop, 33);
 }
 </script>
+<a id="verSwitch" href="gold.html" style="position:fixed;left:16px;bottom:18px;z-index:9;font:11.5px/1.2 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:1px;color:#f0e6c8;background:rgba(10,10,14,.62);border:1px solid rgba(230,215,170,.35);border-radius:999px;padding:6px 13px;text-decoration:none;backdrop-filter:blur(6px);cursor:pointer">🎨 金色版</a>
+<script>document.getElementById("verSwitch").href="gold.html"+location.search;</script>
 </body>
 </html>

@@ -29,6 +29,17 @@
 
 > 摄像头画面只在本地浏览器内处理，不会上传。手势识别依赖 MediaPipe Hands，首次加载约 6 MB，请稍等片刻；若手势没反应，刷新一次即可。
 
+## 🎨 两个配色版本
+
+功能完全一致，只是配色不同。页面**左下角有切换按钮**，点一下即可互换；切换时会自动保留分享码，不会掉到 403。
+
+| 版本 | 文件 | 直达 |
+| --- | --- | --- |
+| 金色版（暖金 + 彩灯） | `gold.html` | https://gesture-christmas-tree-46098.app.workbuddy.host/gold.html?sharecode=T3F3WBMZEN |
+| 冰蓝版（青蓝 + 冷光） | `index.html` | 打开分享链接即是 |
+
+GitHub Pages 同样可访问：`https://sablekernel.github.io/gesture-christmas-tree/gold.html`
+
 ## 🚀 本地运行
 
 纯静态页面，任选一种方式起个本地服务器即可：
