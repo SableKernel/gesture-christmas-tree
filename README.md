@@ -24,7 +24,7 @@
 纯静态页面，任选一种方式起个本地服务器即可：
 
 ```bash
-git clone https://github.com/zhaoyanqi/gesture-christmas-tree.git
+git clone https://github.com/SableKernel/gesture-christmas-tree.git
 cd gesture-christmas-tree
 python -m http.server 8123
 ```
