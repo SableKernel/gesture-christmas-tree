@@ -19,6 +19,16 @@
 
 - 没有摄像头也没关系，页面按钮可以触发同样的效果
 
+## 🌐 在线体验
+
+不用搭环境，直接打开下面任意一个地址就能玩（手机 / iPad 请用 **Safari**，点「开启摄像头」时选允许）：
+
+- **国内可直接访问**：https://gesture-christmas-tree-46098.app.workbuddy.host/?sharecode=T3F3WBMZEN
+  > 转发给别人时请**完整复制整条链接**，`?sharecode=T3F3WBMZEN` 不能丢，否则会返回 403。
+- **GitHub Pages**（海外或网络通畅时更快）：https://sablekernel.github.io/gesture-christmas-tree/
+
+> 摄像头画面只在本地浏览器内处理，不会上传。手势识别依赖 MediaPipe Hands，首次加载约 6 MB，请稍等片刻；若手势没反应，刷新一次即可。
+
 ## 🚀 本地运行
 
 纯静态页面，任选一种方式起个本地服务器即可：
